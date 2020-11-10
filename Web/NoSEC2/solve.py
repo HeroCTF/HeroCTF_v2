@@ -4,7 +4,7 @@ import string
 import requests
 
 flag = ""
-url = "http://139.162.137.94:3000/login"
+url = "http://challs.heroctf.fr:3000/login"
 
 print("password: ", end="")
 

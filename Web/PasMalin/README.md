@@ -8,7 +8,7 @@ Web
 
 Trouver un moyen de vous connecter !
 
-http://139.162.137.94:8888/
+http://challs.heroctf.fr:8888/
 
 Format: Hero{FLAG}
 

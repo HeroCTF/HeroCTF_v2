@@ -8,7 +8,7 @@ Web
 
 Vous devez vous connecter pour valider le challenge !
 
-http://139.162.137.94:3000/login
+http://challs.heroctf.fr:3000/login
 
 Format: Hero{flag}
 

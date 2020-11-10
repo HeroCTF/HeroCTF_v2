@@ -8,7 +8,7 @@ Web
 
 Trouver le moyen de détourner la vérification !
 
-http://139.162.137.94:8080/
+http://challs.heroctf.fr:8080/
 
 Format: Hero{FLAG}
 
@@ -20,8 +20,8 @@ xanhacks
 
 Après beaucoup de recherche nous apprenons que c'est deux URL valident le isset($_GET['give_flag']) :
 
-- http://139.162.137.94:8080/?give_flag
-- http://139.162.137.94:8080/?give.flag
+- http://challs.heroctf.fr:8080/?give_flag
+- http://challs.heroctf.fr:8080/?give.flag
 
 Or, le caractère "." n'est pas interdit dans le preg_match, nous obtenons donc le flag.
 

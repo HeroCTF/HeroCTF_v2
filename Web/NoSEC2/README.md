@@ -9,7 +9,7 @@ Web
 Vous devez retrouver le mot de passe de l'administrateur pour valider le challenge !
 L'URL du challenge reste la même.
 
-http://139.162.137.94:3000/login
+http://challs.heroctf.fr:3000/login
 
 Format: Hero{motdepasse}
 
@@ -47,7 +47,7 @@ import string
 import requests
 
 flag = ""
-url = "http://139.162.137.94:3000/login"
+url = "http://challs.heroctf.fr:3000/login"
 
 print("password: ", end="")
 
