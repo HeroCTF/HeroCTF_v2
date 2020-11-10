@@ -13,7 +13,7 @@ Format: Hero{FLAG}
 ### Fichiers
 
 [RSArdoche.py](RSArdoche.py)
-[ouput.txt](ouput.txt)
+[output.txt](output.txt)
 
 ### Auteur
 

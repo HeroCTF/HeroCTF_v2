@@ -30,10 +30,12 @@ Le chiffrement utilisé est le carré de cesar, d'ou le nom du challenge "C Carr
 
 Le cipher fait 16 caractères donc on fait un carré 4*4 avec celui-ci.
 
+```
 faci
 le_c
 e_ci
 pher
+```
 
 On peut lire le flag !
 

@@ -10,11 +10,16 @@ Discord : https://discord.gg/PhNkPrfeJG
 
 # Challenges
 
-| Nom                         | Catégorie | Auteur   | Points |
-|-----------------------------|:---------:|:--------:|:------:|
-| [PasMalin](Web/PasMalin)    | Web       | xanhacks | 25     |
-| [NoSEC #1](Web/NoSEC1)      | Web       | xanhacks | 100    |
-| [NoSEC #2](Web/NoSEC2)      | Web       | xanhacks | 175    |
-| [Matcheees !](Web/Matcheees)| Web       | xanhacks | 200    |
+| Nom                                  | Catégorie | Auteur     | Points |
+|--------------------------------------|:---------:|:----------:|:------:|
+| [PasMalin](Web/PasMalin)             | Web       | xanhacks   | XXX    |
+| [NoSEC #1](Web/NoSEC1)               | Web       | xanhacks   | XXX    |
+| [NoSEC #2](Web/NoSEC2)               | Web       | xanhacks   | XXX    |
+| [Matcheees !](Web/Matcheees)         | Web       | xanhacks   | XXX    |
+| [Base16](Crypto/Base16)              | Crypto    | xanhacks   | XXX    |
+| [C Carré](Crypto/C_Carre)            | Crypto    | xanhacks   | XXX    |
+| [MathemaCrypt](Crypto/MathemaCrypt)  | Crypto    | Matisse    | XXX    |
+| [RSArdoche](Crypto/RSArdoche)        | Crypto    | Yarienkiva | XXX    |
+| [Substitution](Crypto/Substitution)  | Crypto    | xanhacks   | XXX    |
 
-**Total : 4 challenges**
+**Total : 9 challenges**
