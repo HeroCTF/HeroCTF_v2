@@ -24,6 +24,9 @@ Discord : https://discord.gg/PhNkPrfeJG
 | [ChatTCP](Networks/ChatTCP)          | Networks  | xanhacks   | XXX    |
 | [FunnyCat](Pwn/FunnyCat)             | Pwn       | xanhacks   | XXX    |
 | [Restricted](Pwn/Restricted)         | Pwn       | xanhacks   | XXX    |
+| [Pokemon](Sequence/Pokemon)          | Sequence  | xanhacks   | XXX    |
+| [SirAccuse](Sequence/SirAccuse)      | Sequence  | SoEasY     | XXX    |
+| [PyCode](Reverse/PyCode)             | Reverse   | xanhacks   | XXX    |
 
 
-**Total : 12 challenges**
+**Total : 15 challenges**
