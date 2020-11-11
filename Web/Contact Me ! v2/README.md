@@ -27,11 +27,11 @@ Ici, nous savons que nous avons à faire à une faille de type XSS.<br/>
 En revanche, l'admin a mis en place des restrictions pour se prévenir de celle-ci.
 
 Ici, il va falloir procéder à des tests pour savoir ce que l'on a le droit de faire ou non:<br/>
-- La balise <script> est interdite<br/>
-- La balise <img> est interdite<br/>
-- La balise <iframe> est interdite<br/>
-- La balise <body> est interdite<br/>
-- La balise <span> est interdite<br/>
+- La balise "script" est interdite<br/>
+- La balise "img" est interdite<br/>
+- La balise "iframe" est interdite<br/>
+- La balise "body" est interdite<br/>
+- La balise "span" est interdite<br/>
 - L'évènement "onerror" est interdit<br/>
 - L'évènement "onload" est interdit<br/>
 - Le caractère "+" est interdit<br/>
