@@ -27,6 +27,9 @@ Discord : https://discord.gg/PhNkPrfeJG
 | [Pokemon](Sequence/Pokemon)          | Sequence  | xanhacks   | XXX    |
 | [SirAccuse](Sequence/SirAccuse)      | Sequence  | SoEasY     | XXX    |
 | [PyCode](Reverse/PyCode)             | Reverse   | xanhacks   | XXX    |
+| [CoronaData](Algo/CoronaData)        | Algo      | xanhacks   | XXX    |
+| [Pixels](Algo/Pixels)                | Algo      | xanhacks   | XXX    |
+| [FreePassXC](Forensics/FreePassXC)   | Forensics | xanhacks   | XXX    |
 
 
-**Total : 15 challenges**
+**Total : 18 challenges**
