@@ -20,9 +20,8 @@ function filter($message){
   $ret = str_ireplace("body","",$ret);
   $ret = str_ireplace("onerror","",$ret);
   $ret = str_ireplace("src","",$ret);
-  $ret = str_ireplace("document","",$ret);
   $ret = str_ireplace("+","",$ret);
-  $ret = str_ireplace("onfocus","",$ret);
+  $ret = str_ireplace("onload","",$ret);
   $ret = str_ireplace("open","",$ret);
   $ret = str_ireplace("XML","",$ret);
   $ret = str_ireplace("eval","",$ret);
