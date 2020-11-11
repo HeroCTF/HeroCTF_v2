@@ -18,7 +18,7 @@ Le mot de passe se trouve dans cette liste : https://www.scrapmaker.com/data/wor
 
 ### Fichier
 
-[s3cr3t.kbd](s3cr3t.kbd)
+[s3cr3t.kdb](s3cr3t.kdb)
 
 ### Auteur
 
