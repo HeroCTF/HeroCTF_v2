@@ -41,8 +41,7 @@ Dans ce fichier, on remarque plusieurs choses :<br/>
 Nous allons donc utiliser cette option pour passer notre code PHP et arriver à notre but !
 
 Payload : http://challs.heroctf.fr:3005/index.php?page=phpinfo();, ici, le serveur nous répond que le fichier n'existe pas, forcément, puisque c'est du code PHP.<br/>
-On va donc maintenant accéder à notre session AVEC le paramètre page car on veut que notre code PHP soit exécuté.
-
+On va donc maintenant accéder à notre session AVEC le paramètre page car on veut que notre code PHP soit exécuté.<br/>
 Payload :  http://challs.heroctf.fr:3005/index.php?page=./OhD4Sessions/sess_ID<br/>
 BOOM ! Notre code php est exécuté, nous avons donc notre RCE.
 
