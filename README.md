@@ -21,5 +21,9 @@ Discord : https://discord.gg/PhNkPrfeJG
 | [MathemaCrypt](Crypto/MathemaCrypt)  | Crypto    | Matisse    | XXX    |
 | [RSArdoche](Crypto/RSArdoche)        | Crypto    | Yarienkiva | XXX    |
 | [Substitution](Crypto/Substitution)  | Crypto    | xanhacks   | XXX    |
+| [ChatTCP](Networks/ChatTCP)          | Networks  | xanhacks   | XXX    |
+| [FunnyCat](Pwn/FunnyCat)             | Pwn       | xanhacks   | XXX    |
+| [Restricted](Pwn/Restricted)         | Pwn       | xanhacks   | XXX    |
 
-**Total : 9 challenges**
+
+**Total : 12 challenges**
