@@ -32,6 +32,8 @@ Discord : https://discord.gg/PhNkPrfeJG
 | [Pixels](Algo/Pixels)                                            | Algo          | xanhacks   | XXX    |
 | [FreePassXC](Forensics/FreePassXC)                               | Forensics     | xanhacks   | XXX    |
 | [Communications secrètes](Steganography/CommunicationsSecretes)  | Steganography | Thib       | XXX    |
+| [Some Good Music](Steganography/SomeGoodMusic)                   | Steganography | Thib       | XXX    |
+| [Origami PDF](Steganography/OrigamiDeFormatDeDocumentPortable)   | Steganography | Thib       | XXX    |
 
 
 **Total : XX challenges**
