@@ -22,7 +22,7 @@ On arrive sur une page d'authentification classique, avec un username et un pass
 Un des premiers réflexes est de regarder si un fichier robots.txt est présent ou non, et dans ce cas, oui ! Il y en a un.<br/>
 Dedans on n'y apprend pas grand chose, mais on remarque qu'un fichier est censé rester caché : "username.txt". Dedans, on apprend que le username est "Admin", c'est déjà une bonne information!
 
-On essaye donc de passer une ' dans le username, pour voir si cela déclenche une erreur, et oui!, il y a une erreur sql!<br/>
+On essaye donc de passer une ' dans le username, pour voir si cela déclenche une erreur, et oui!, le script nous affiche "Query error".<br/>
 Nous avons donc à faire à une injection SQL!<br/>
 Pareil que pour le challenge "Sessions Workout", on va visiter : https://github.com/swisskyrepo/PayloadsAllTheThings, pour voir ce que l'on peut faire.
 
