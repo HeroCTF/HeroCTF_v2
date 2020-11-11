@@ -34,6 +34,10 @@ Discord : https://discord.gg/PhNkPrfeJG
 | [Communications secrètes](Steganography/CommunicationsSecretes)  | Steganography | Thib       | XXX    |
 | [Some Good Music](Steganography/SomeGoodMusic)                   | Steganography | Thib       | XXX    |
 | [Origami PDF](Steganography/OrigamiDeFormatDeDocumentPortable)   | Steganography | Thib       | XXX    |
+| [Sessions Workout](Web/SessionsWorkout)                          | Web           | Worty      | XXX    |
+| [Contact Me !](Web/ContactMe!)                                   | Web           | Worty      | XXX    |
+| [Contact Me ! v2](Web/ContactMe!v2)                              | Web           | Worty      | XXX    |
+| [My Private Server](Web/MyPrivateServer)                         | Web           | Worty      | XXX    |
 
 
 **Total : XX challenges**
