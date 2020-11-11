@@ -7,7 +7,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
   $res = $db->query($sql);
   if(!is_bool($res)){
     if(isset($res->fetchAll()[0])){
-      $msg = 'Welcome back admin, your last message was : HeroCTF{b4s1c_sql_1nj3ct1on}';
+      $msg = 'Welcome back admin, your last message was : Hero{b4s1c_sql_1nj3ct1on}';
     }else{
       $msg = 'UhOh you don\'t seem to be an admin.';
     }
