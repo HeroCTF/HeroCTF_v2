@@ -40,5 +40,4 @@ Discord : https://discord.gg/PhNkPrfeJG
 | [Origami PDF](Steganography/OrigamiDeFormatDeDocumentPortable)   | Steganography | Thib       | XXX    |
 
 
-
 **Total : XX challenges**
