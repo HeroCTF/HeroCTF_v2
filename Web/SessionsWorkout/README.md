@@ -17,7 +17,7 @@ Format : Hero{flag}
 
 Worty
 
-### Note aux lecteurs
+### Hint
 
 Github ne permet pas d'afficher du code PHP tel quel. Quand il y a une payload il faut évidemment mettre les balises PHP pour que celle-ci fonctionne.<br/>
 Ces balises ne seront donc pas présentes dans ce writeup mais doivent être présentes quand vous faites le challenge.
