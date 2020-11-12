@@ -17,12 +17,15 @@ Discord : https://discord.gg/PhNkPrfeJG
 | [NoSEC #1](Web/NoSEC1)                                           | Web           | xanhacks   | XXX    |
 | [NoSEC #2](Web/NoSEC2)                                           | Web           | xanhacks   | XXX    |
 | [Matcheees !](Web/Matcheees)                                     | Web           | xanhacks   | XXX    |
+| [Sessions Workout](Web/SessionsWorkout)                          | Web           | Worty      | XXX    |
+| [Contact Me !](Web/ContactMe!)                                   | Web           | Worty      | XXX    |
+| [Contact Me ! v2](Web/ContactMe!v2)                              | Web           | Worty      | XXX    |
+| [My Private Server](Web/MyPrivateServer)                         | Web           | Worty      | XXX    |
 | [Base16](Crypto/Base16)                                          | Crypto        | xanhacks   | XXX    |
 | [C Carré](Crypto/C_Carre)                                        | Crypto        | xanhacks   | XXX    |
 | [MathemaCrypt](Crypto/MathemaCrypt)                              | Crypto        | Matisse    | XXX    |
 | [RSArdoche](Crypto/RSArdoche)                                    | Crypto        | Yarienkiva | XXX    |
 | [Substitution](Crypto/Substitution)                              | Crypto        | xanhacks   | XXX    |
-| [ChatTCP](Networks/ChatTCP)                                      | Networks      | xanhacks   | XXX    |
 | [FunnyCat](Pwn/FunnyCat)                                         | Pwn           | xanhacks   | XXX    |
 | [Restricted](Pwn/Restricted)                                     | Pwn           | xanhacks   | XXX    |
 | [Pokemon](Sequence/Pokemon)                                      | Sequence      | xanhacks   | XXX    |
@@ -31,13 +34,11 @@ Discord : https://discord.gg/PhNkPrfeJG
 | [CoronaData](Algo/CoronaData)                                    | Algo          | xanhacks   | XXX    |
 | [Pixels](Algo/Pixels)                                            | Algo          | xanhacks   | XXX    |
 | [FreePassXC](Forensics/FreePassXC)                               | Forensics     | xanhacks   | XXX    |
+| [ChatTCP](Forensics/ChatTCP)                                     | Forensics     | xanhacks   | XXX    |
 | [Communications secrètes](Steganography/CommunicationsSecretes)  | Steganography | Thib       | XXX    |
 | [Some Good Music](Steganography/SomeGoodMusic)                   | Steganography | Thib       | XXX    |
 | [Origami PDF](Steganography/OrigamiDeFormatDeDocumentPortable)   | Steganography | Thib       | XXX    |
-| [Sessions Workout](Web/SessionsWorkout)                          | Web           | Worty      | XXX    |
-| [Contact Me !](Web/ContactMe!)                                   | Web           | Worty      | XXX    |
-| [Contact Me ! v2](Web/ContactMe!v2)                              | Web           | Worty      | XXX    |
-| [My Private Server](Web/MyPrivateServer)                         | Web           | Worty      | XXX    |
+
 
 
 **Total : XX challenges**
