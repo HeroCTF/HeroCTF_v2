@@ -22,11 +22,11 @@ Worty
 
 Pour réussir cette étape, je vais passer par plusieurs sous-étape.<br/>
 Tout d'abord, il va falloir récupérer le port ainsi que l'IP, pour se faire, je vais utiliser la commande linux_netstat de volatility.
-[alt](ip_port.png)
+![alt](ip_port.png)
 
 On peut donc en déduire que le programme "python3" a servi pour ouvrir une backdoor sur le PC de boris.<br/>
 Je vais donc lister les processus en me concentrant sur celui ayant le PID 1953 pour voir quel programme il a lancé
-[alt](heure.png)
+![alt](heure.png)
 Ici on voit que le processus python (PID 1953) a lancé le processus bash (PID 1955), c'est donc le programme bash qui est le plus intéressant.
 
 ### Flag
