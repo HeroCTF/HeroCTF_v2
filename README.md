@@ -33,7 +33,7 @@ Discord : https://discord.gg/PhNkPrfeJG
 | [PyCode](Reverse/PyCode)                                         | Reverse       | xanhacks   | XXX    |
 | [CoronaData](Algo/CoronaData)                                    | Algo          | xanhacks   | XXX    |
 | [Pixels](Algo/Pixels)                                            | Algo          | xanhacks   | XXX    |
-| [Writeups](OSINT/Writeups)                                       | OSINT         | xanhacks   | XXX    |
+| [Writeups](OSINT/Writeups)                                       | OSINT         | SoEasY     | XXX    |
 | [FreePassXC](Forensics/FreePassXC)                               | Forensics     | xanhacks   | XXX    |
 | [ChatTCP](Forensics/ChatTCP)                                     | Forensics     | xanhacks   | XXX    |
 | [Vergrootglas](Steganography/Vergrootglas)                       | Steganography | xanhacks   | XXX    |
