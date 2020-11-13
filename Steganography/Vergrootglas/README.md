@@ -20,7 +20,7 @@ xanhacks
 
 ### Solution
 
-Vergrootglas signifie "loupe" en néerlandais. Ce qui nous donne une bonne indice pour ce challenge.
+Vergrootglas signifie "loupe" en néerlandais. Ce qui nous donne un bon indice pour ce challenge.
 
 En zoomant en bas à droite de l'image nous pouvons apercevoir le flag.
 
