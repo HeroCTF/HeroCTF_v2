@@ -20,7 +20,7 @@ Worty
 
 D'après la description, on sait qu'on ne peut pas se fier à l'adresse IP trouvée dans la première épreuve.<br/>
 Il va donc falloir analyser les logs finement pour trouver le fichier qui a été exfiltré.<br/>
-Quand on se concentre sur les logs, on peut voir un fichier qui revient souvent/
+Quand on se concentre sur les logs, on peut voir un fichier qui revient souvent.
 ![alt](transition.png)
 
 On voit que ce fichier charge une page, généralement inscription.php<br/>
