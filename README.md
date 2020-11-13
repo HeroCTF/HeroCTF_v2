@@ -35,6 +35,7 @@ Discord : https://discord.gg/PhNkPrfeJG
 | [Pixels](Algo/Pixels)                                            | Algo          | xanhacks   | XXX    |
 | [FreePassXC](Forensics/FreePassXC)                               | Forensics     | xanhacks   | XXX    |
 | [ChatTCP](Forensics/ChatTCP)                                     | Forensics     | xanhacks   | XXX    |
+| [Vergrootglas](Steganography/Vergrootglas)                       | Steganography | xanhacks   | XXX    |
 | [Communications secrètes](Steganography/CommunicationsSecretes)  | Steganography | Thib       | XXX    |
 | [Some Good Music](Steganography/SomeGoodMusic)                   | Steganography | Thib       | XXX    |
 | [Origami PDF](Steganography/OrigamiDeFormatDeDocumentPortable)   | Steganography | Thib       | XXX    |
