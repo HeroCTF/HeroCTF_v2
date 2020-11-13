@@ -21,7 +21,7 @@ Discord : https://discord.gg/PhNkPrfeJG
 | [Contact Me !](Web/ContactMe!)                                   | Web           | Worty      | XXX    |
 | [Contact Me ! v2](Web/ContactMe!v2)                              | Web           | Worty      | XXX    |
 | [My Private Server](Web/MyPrivateServer)                         | Web           | Worty      | XXX    |
-| [Base16](Crypto/Base16)                                          | Crypto        | xanhacks   | XXX    |
+| [FunnyBase](Crypto/FunnyBase)                                    | Crypto        | xanhacks   | XXX    |
 | [C Carré](Crypto/C_Carre)                                        | Crypto        | xanhacks   | XXX    |
 | [MathemaCrypt](Crypto/MathemaCrypt)                              | Crypto        | Matisse    | XXX    |
 | [RSArdoche](Crypto/RSArdoche)                                    | Crypto        | Yarienkiva | XXX    |
