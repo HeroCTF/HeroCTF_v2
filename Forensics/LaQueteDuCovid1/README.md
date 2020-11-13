@@ -32,6 +32,8 @@ Ceci pourra vous aider : https://github.com/volatilityfoundation/volatility/wiki
 
 Après avoir téléchargé l'archive du challenge, le profile correspondant et volatility, il va falloir passer par une étape "0".<br/>
 En effet, il va falloir placer le profile donné dans le bon dossier de volatility pour que celui-ci puisse l'utiliser pour l'analyse du dump mémoire.<br/>
+Un petit coup de recherche Google, et on voit que le profil doit être placé dans volatilty/plugins/linux/ pour qu'il soit accessible par volatility pour une analyse.
+
 
 
 ### Flag
