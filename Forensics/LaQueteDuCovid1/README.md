@@ -36,8 +36,7 @@ Un petit coup de recherche Google, et on voit que le profil doit être placé da
 
 Pour commencer, on va passer par la très célèbre combinaison : "strings grep" pour récupérer les premières informations.<br/>
 ![alt](username.png)
-
-
+![alt](machine_name.png)
 
 ### Flag
 
