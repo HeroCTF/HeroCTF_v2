@@ -30,7 +30,7 @@ On remarque tout d'abord que ce programme à été créé spécialement pour chi
 Ensuite, on voit que le fichier ouvre ce dit fichier, et qu'il effectue l'opération xor avec 0x41 (un "A"), et ceci sur l'entièreté du fichier.
 ![alt](decompile_2.png)
 
-Il faut donc tout simplement ouvrir le fichier, et xor avec 0x41 pour retrouver le contenu de base du fichier. Pour cela, je vais utiliser python.
+Il faut donc tout simplement ouvrir le fichier, et xor avec 0x41 pour retrouver le contenu de base du fichier. Pour cela, je vais utiliser python.<br/>
 ![alt](python.png)
 ![alt](res_python.png)
 ### Flag
