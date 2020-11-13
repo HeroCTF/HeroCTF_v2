@@ -12,7 +12,6 @@ On vous demande de retrouver l'IP qui s'est connecté ainsi que le port. Il faud
 
 Rappel : Le dump mémoire à analyser est celui du premier challenge.
 Format du flag : Hero{IP:PORT:HH:MM:SS}
-Auteur : Worty
 
 ### Auteur 
 
