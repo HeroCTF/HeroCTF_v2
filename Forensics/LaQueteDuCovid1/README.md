@@ -34,6 +34,9 @@ Après avoir téléchargé l'archive du challenge, le profile correspondant et v
 En effet, il va falloir placer le profile donné dans le bon dossier de volatility pour que celui-ci puisse l'utiliser pour l'analyse du dump mémoire.<br/>
 Un petit coup de recherche Google, et on voit que le profil doit être placé dans volatilty/plugins/linux/ pour qu'il soit accessible par volatility pour une analyse.
 
+Pour commencer, on va passer par la très célèbre combinaison : "strings grep" pour récupérer les premières informations.<br/>
+![alt](username.png)
+
 
 
 ### Flag
