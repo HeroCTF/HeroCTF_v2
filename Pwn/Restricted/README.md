@@ -41,6 +41,13 @@ pwn@pwn:~$ echo `< f04af61b3f332afa0ceec786a42cd365.txt`
 Hero{r3strict3d_b4sh_with_3cho}
 ```
 
+ou (Merci à @Rick)
+
+```
+pwn@pwn:~$ source f04af61b3f332afa0ceec786a42cd365.txt
+rbash: Hero{r3strict3d_b4sh_with_3cho}: command not found
+```
+
 ### Flag
 
 Hero{r3strict3d_b4sh_with_3cho}
