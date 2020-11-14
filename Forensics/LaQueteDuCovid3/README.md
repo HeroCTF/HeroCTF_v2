@@ -27,7 +27,7 @@ Ici, on ne voit aucun processus intéressant, juste le fichier de backdoor et le
 
 ![alt](second_grep.png)
 Un processus retiens mon attention, le processus "covid", qui n'est pas du tout un processus habituel.<br/>
-Pour vérifier que c'est bien le bon, on va aller regarder la liste des fichiers ouverts, et grep sur le PID 2461, pour voir si celui-ci à ouvert le fichier des résultats d'analyse de Boris. Pour se faire, je vais utiliser la commande linux_lsof, qui permet de lister les fichiers ouverts au moment de la création du dump mémoire.
+Partant du principe que ce programme est bien celui que l'on cherche, on va aller liste les fichiers qu'il a potentiellement pu ouvrir, pour y faire une quelconque action.
 
 ![alt](third_grep.png)
 Le processus a ouvert le fichier "resultat_analyse.txt" de Boris surement pour le chiffrer, c'est donc notre fichier!
