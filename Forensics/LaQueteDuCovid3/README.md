@@ -7,9 +7,9 @@ Forensics
 ### Description
 
 Parfait ! Nous avons maintenant identifié l'IP de l'attaquant.
-Il semblerait qu'un programme bizarre se soit lancé aussi, Boris ne peut plus ouvrir son rapport d'analyse...
+Il semblerait qu'un programme bizarre se soit lancé aussi, Boris ne peut plus ouvrir un de ses fichiers...
 
-Retrouvez le nom du programme ainsi que son PID!
+Retrouvez le nom du programme, son PID ainsi que le fichier que Boris ne peut plus ouvrir!
 
 Rappel : Le dump mémoire à analyser est celui du premier challenge.
 Format du flag : Hero{nom:PID.nomfichier}
@@ -30,7 +30,7 @@ Un processus retiens mon attention, le processus "covid", qui n'est pas du tout 
 Pour vérifier que c'est bien le bon, on va aller regarder la liste des fichiers ouverts, et grep sur le PID 2461, pour voir si celui-ci à ouvert le fichier des résultats d'analyse de Boris. Pour se faire, je vais utiliser la commande linux_lsof, qui permet de lister les fichiers ouverts au moment de la création du dump mémoire.
 
 ![alt](third_grep.png)
-Le processus a ouvert le fichier "resultat_analyse.txt" de Boris surement pour le chiffrer, car c'est le seul qui parraît suspect.
+Le processus a ouvert le fichier "resultat_analyse.txt" de Boris surement pour le chiffrer, c'est donc notre fichier!
 ### Flag
 
 Hero{covid:2461:resultat_analyse.txt}
