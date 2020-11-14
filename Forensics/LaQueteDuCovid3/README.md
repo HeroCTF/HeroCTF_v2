@@ -12,7 +12,7 @@ Il semblerait qu'un programme bizarre se soit lancé aussi, Boris ne peut plus o
 Retrouvez le nom du programme ainsi que son PID!
 
 Rappel : Le dump mémoire à analyser est celui du premier challenge.
-Format du flag : Hero{nom:PID}
+Format du flag : Hero{nom:PID.nomfichier}
 
 ### Auteur 
 
@@ -30,7 +30,7 @@ Un processus retiens mon attention, le processus "covid", qui n'est pas du tout 
 Pour vérifier que c'est bien le bon, on va aller regarder la liste des fichiers ouverts, et grep sur le PID 2461, pour voir si celui-ci à ouvert le fichier des résultats d'analyse de Boris. Pour se faire, je vais utiliser la commande linux_lsof, qui permet de lister les fichiers ouverts au moment de la création du dump mémoire.
 
 ![alt](third_grep.png)
-Le processus a ouvert le fichier d'analyse de Boris surement pour le chiffrer, car c'est le seul qui parraît suspect.
+Le processus a ouvert le fichier "resultat_analyse.txt" de Boris surement pour le chiffrer, car c'est le seul qui parraît suspect.
 ### Flag
 
-Hero{covid:2461}
+Hero{covid:2461:resultat_analyse.txt}
