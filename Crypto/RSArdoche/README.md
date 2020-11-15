@@ -21,13 +21,15 @@ Yarienkiva
 
 ### Solution
 
-La formule pour chiffrer un message en RSA : ct = pt ^ e % n
+La formule pour chiffrer un message en RSA : `ct = pt ^ e % n`
 
 Sauf que pour e=1 on a :
+```
         ct = pt ^ e % n
     <=> ct = pt ^ 1 % n
     <=> ct = pt % n
     <=> ct = pt (car n > ct)
+```
 
 Le ciphertext étant égal au plaintext on peut donc simplement le décoder avec : 
 ```python
