@@ -24,7 +24,7 @@ Yarienkiva
 [solve.py](solve.py)
 
 Le zip fournis contient 1000 clés publiques SSH, le but est d'en retrouver au moins une pour se connecter à la machine distante.
-Pour celà on va faire une common factor attack sur chaque paire de clé, c'est à dire que pour chaque paire de clé (a,b) on va calculer PGCD(N de a, N de b), s'il est différent de 1 cela veut dire qu'on a trouvé un des facteurs des N.
+Pour cela on va faire une common factor attack sur chaque paire de clé, c'est à dire que pour chaque paire de clé (a,b) on va calculer PGCD(N de a, N de b), s'il est différent de 1 cela veut dire qu'on a trouvé un des facteurs des N.
 Il ne reste ensuite plus qu'à en factoriser un :
 
 ```python
