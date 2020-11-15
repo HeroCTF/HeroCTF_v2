@@ -36,8 +36,8 @@ Le ciphertext étant égal au plaintext on peut donc simplement le décoder avec
 from Crypto.Util.number import long_to_bytes
 print(long_to_bytes(ct))
 ```
-https://stackoverflow.com/questions/17490282/why-is-this-commit-that-sets-the-rsa-public-exponent-to-1-problematic
 https://www.cryptofails.com/post/70059600123/saltstack-rsa-e-d-1 (L'inspiration de ce challenge et du jeu de mot qui a donné le titre et la description, jeu de mot que je ne pense plus jamais égaler de toute ma vie)
+https://stackoverflow.com/questions/17490282/why-is-this-commit-that-sets-the-rsa-public-exponent-to-1-problematic (Post SO qui explique un peu plus en détails la solution du challenge)
 
 ### Flag
 
