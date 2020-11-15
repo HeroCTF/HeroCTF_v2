@@ -37,7 +37,7 @@ from Crypto.Util.number import long_to_bytes
 print(long_to_bytes(ct))
 ```
 https://stackoverflow.com/questions/17490282/why-is-this-commit-that-sets-the-rsa-public-exponent-to-1-problematic
-
+https://www.cryptofails.com/post/70059600123/saltstack-rsa-e-d-1
 
 ### Flag
 
