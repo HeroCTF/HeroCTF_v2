@@ -40,7 +40,7 @@ print(key.export_key('PEM').decode())
 
 https://eprint.iacr.org/2012/064.pdf
 
-https://ctftime.org/writeup/14021 (j'ai découvert il y a environ 15min qu'un challenge assez similaire existait déjà, ce WU utilise une manière différente, ([RsaCtfTool](https://github.com/Ganapati/RsaCtfTool), pour solve le challenge)
+https://ctftime.org/writeup/14021 (j'ai découvert il y a environ 15min qu'un challenge assez similaire existait déjà, ce WU utilise [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool) pour solve le challenge)
 
 
 ### Flag
