@@ -21,13 +21,20 @@ xanhacks
 
 ### Solution
 
-Il y a plusieurs façons de résoudre ce challenge, voici deux exemples :
+Il y a plusieurs façons de résoudre ce challenge, voici quelques exemples :
 
 ```
 funnycat:~$ cat < -
 Hero{v3ry_s1mpl3_sh3ll_trick}
 
 funnycat:~$ cat ./-
+Hero{v3ry_s1mpl3_sh3ll_trick}
+
+funnycat:~$ more -
+Hero{v3ry_s1mpl3_sh3ll_trick}
+
+funnycat:~$ vi -
+** open vi **
 Hero{v3ry_s1mpl3_sh3ll_trick}
 ```
 
