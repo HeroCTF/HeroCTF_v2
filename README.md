@@ -12,35 +12,53 @@ Discord : https://discord.gg/PhNkPrfeJG
 
 | Nom                                                              | Catégorie     | Auteur     | Points |
 |------------------------------------------------------------------|:-------------:|:----------:|:------:|
-| [PasMalin](Web/PasMalin)                                         | Web           | xanhacks   | XXX    |
-| [FreeAccess](Web/FreeAccess)                                     | Web           | xanhacks   | XXX    |
-| [NoSEC #1](Web/NoSEC1)                                           | Web           | xanhacks   | XXX    |
-| [NoSEC #2](Web/NoSEC2)                                           | Web           | xanhacks   | XXX    |
-| [Matcheees !](Web/Matcheees)                                     | Web           | xanhacks   | XXX    |
-| [Sessions Workout](Web/SessionsWorkout)                          | Web           | Worty      | XXX    |
-| [Contact Me !](Web/ContactMe!)                                   | Web           | Worty      | XXX    |
-| [Contact Me ! v2](Web/ContactMe!v2)                              | Web           | Worty      | XXX    |
-| [My Private Server](Web/MyPrivateServer)                         | Web           | Worty      | XXX    |
-| [FunnyBase](Crypto/FunnyBase)                                    | Crypto        | xanhacks   | XXX    |
-| [C Carré](Crypto/C_Carre)                                        | Crypto        | xanhacks   | XXX    |
-| [MathemaCrypt](Crypto/MathemaCrypt)                              | Crypto        | Matisse    | XXX    |
-| [RSArdoche](Crypto/RSArdoche)                                    | Crypto        | Yarienkiva | XXX    |
-| [Substitution](Crypto/Substitution)                              | Crypto        | xanhacks   | XXX    |
-| [FunnyCat](Pwn/FunnyCat)                                         | Pwn           | xanhacks   | XXX    |
-| [Restricted](Pwn/Restricted)                                     | Pwn           | xanhacks   | XXX    |
-| [Pokemon](Sequence/Pokemon)                                      | Sequence      | xanhacks   | XXX    |
-| [SirAccuse](Sequence/SirAccuse)                                  | Sequence      | SoEasY     | XXX    |
-| [PyCode](Reverse/PyCode)                                         | Reverse       | xanhacks   | XXX    |
-| [CoronaData](Algo/CoronaData)                                    | Algo          | xanhacks   | XXX    |
-| [Pixels](Algo/Pixels)                                            | Algo          | xanhacks   | XXX    |
+| [CoronaData](Algo/CoronaData)                                    | Algo          | xanhacks   | 25     |
+| [Pixels](Algo/Pixels)                                            | Algo          | xanhacks   | 50     |
+| [FunnyBase](Crypto/FunnyBase)                                    | Crypto        | xanhacks   | 20     |
+| [C Carré](Crypto/C_Carre)                                        | Crypto        | xanhacks   | 40     |
+| [MathemaCrypt](Crypto/MathemaCrypt)                              | Crypto        | Matisse    | 75     |
+| [Substitution](Crypto/Substitution)                              | Crypto        | xanhacks   | 50     |
+| [RSArdoche](Crypto/RSArdoche)                                    | Crypto        | Yarienkiva | 150    |
+| [Postman](Crypto/Postman)                                        | Crypto        | Yarienkiva | 400    |
+| [FreePassXC](Forensics/FreePassXC)                               | Forensics     | xanhacks   | 50     |
+| [ChatTCP](Forensics/ChatTCP)                                     | Forensics     | xanhacks   | 25     |
+| [What the log? 1/3](Forensics/WhatTheLog1)                       | Forensics     | Worty      | 30     |
+| [What the log? 2/3](Forensics/WhatTheLog2)                       | Forensics     | Worty      | 50     |
+| [What the log? 3/3](Forensics/WhatTheLog3)                       | Forensics     | Worty      | 125    |
+| [La quête du COVID 1/4](Forensics/LaQueteDuCovid1)               | Forensics     | Worty      | 100    |
+| [La quête du COVID 2/4](Forensics/LaQueteDuCovid2)               | Forensics     | Worty      | 175    |
+| [La quête du COVID 3/4](Forensics/LaQueteDuCovid3)               | Forensics     | Worty      | 200    |
 | [Rules](OSINT/Rules)                                             | OSINT         | xanhacks   | 1      |
-| [Writeups](OSINT/Writeups)                                       | OSINT         | SoEasY     | XXX    |
-| [FreePassXC](Forensics/FreePassXC)                               | Forensics     | xanhacks   | XXX    |
-| [ChatTCP](Forensics/ChatTCP)                                     | Forensics     | xanhacks   | XXX    |
-| [Vergrootglas](Steganography/Vergrootglas)                       | Steganography | xanhacks   | XXX    |
-| [Communications secrètes](Steganography/CommunicationsSecretes)  | Steganography | Thib       | XXX    |
-| [Some Good Music](Steganography/SomeGoodMusic)                   | Steganography | Thib       | XXX    |
-| [Origami PDF](Steganography/OrigamiDeFormatDeDocumentPortable)   | Steganography | Thib       | XXX    |
+| [Writeups](OSINT/Writeups)                                       | OSINT         | SoEasY     | 15     |
+| [Someone's birthday](OSINT/Someonesbirthday)                     | OSINT         | Worty      | 50     |
+| [Racine-moi](OSINT/Racinemoi)                                    | OSINT         | SoEasY     | 175    |
+| [FunnyCat](Pwn/FunnyCat)                                         | Pwn           | xanhacks   | 75     |
+| [Forceur](Pwn/Forceur)                                           | Pwn           | SoEasY     | 100    |
+| [Restricted](Pwn/Restricted)                                     | Pwn           | xanhacks   | 125    |
+| [Call Me Maybe](Pwn/CallMeMaybe)                                 | Pwn           | SoEasY     | 200    |
+| [Fonce dans le tas](Pwn/FonceDansLeTas)                          | Pwn           | SoEasY     | 400    |
+| [Fonce pas dans le tas](Pwn/FoncePasDansLeTas)                   | Pwn           | SoEasY     | 600    |
+| [La quête du COVID 4/4](Reverse/LaQueteDuCovid4)                 | Reverse       | Worty      | 100    |
+| [PyCode](Reverse/PyCode)                                         | Reverse       | xanhacks   | 125    |
+| [Dashlane sUPermaX](Reverse/DashlanesUPermaX)                    | Reverse       | SoEasY     | 200    |
+| [alARMe](Reverse/alARMe)                                         | Reverse       | SoEasY     | 400    |
+| [Risqué tout ça](Reverse/RisqueToutCa)                           | Reverse       | SoEasY     | 600    |
+| [SirAccuse](Sequence/SirAccuse)                                  | Sequence      | SoEasY     | 20     |
+| [Pokemon](Sequence/Pokemon)                                      | Sequence      | xanhacks   | 50     |
+| [Vergrootglas](Steganography/Vergrootglas)                       | Steganography | xanhacks   | 25     |
+| [Communications secrètes](Steganography/CommunicationsSecretes)  | Steganography | Thib       | 30     |
+| [Some Good Music](Steganography/SomeGoodMusic)                   | Steganography | Thib       | 50     |
+| [Origami PDF](Steganography/OrigamiDeFormatDeDocumentPortable)   | Steganography | Thib       | 200    |
+| [PasMalin](Web/PasMalin)                                         | Web           | xanhacks   | 25     |
+| [FreeAccess](Web/FreeAccess)                                     | Web           | xanhacks   | 30     |
+| [Contact Me !](Web/ContactMe!)                                   | Web           | Worty      | 80     |
+| [My Private Server](Web/MyPrivateServer)                         | Web           | Worty      | 100    |
+| [Matcheees !](Web/Matcheees)                                     | Web           | xanhacks   | 200    |
+| [NoSEC #1](Web/NoSEC1)                                           | Web           | xanhacks   | 225    |
+| [NoSEC #2](Web/NoSEC2)                                           | Web           | xanhacks   | 225    |
+| [Sessions Workout](Web/SessionsWorkout)                          | Web           | Worty      | 250    |
+| [Contact Me ! v2](Web/ContactMe!v2)                              | Web           | Worty      | 250    |
+| [C'est choquant](Web/CestChoquant)                               | Web           | Worty      | 275    |
 
 
 **Total : XX challenges**
