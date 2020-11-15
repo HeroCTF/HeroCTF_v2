@@ -6,6 +6,8 @@ HeroCTF est un CTF (Capture The Flag) qui a pour but de faire découvrir le mond
 
 Les Write Ups sont en cours de réalisations !
 
+La version 2 d'HeroCTF a réuni un total de 176 participants !
+
 Site Web : https://www.heroctf.fr/ <br>
 Twitter : https://twitter.com/HeroCTF <br>
 Discord : https://discord.gg/PhNkPrfeJG
@@ -64,4 +66,4 @@ Discord : https://discord.gg/PhNkPrfeJG
 | [C'est choquant](Web/CestChoquant)                               | Web           | Worty      | 275    |
 
 
-**Total : 48 challenges**
+**Total : 48 challenges (6986 points)**
