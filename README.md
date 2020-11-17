@@ -39,7 +39,7 @@ Discord : https://discord.gg/PhNkPrfeJG
 | [FunnyCat](Pwn/FunnyCat)                                         | Pwn           | xanhacks   | 75     |
 | [Forceur](Pwn/Forceur)                                           | Pwn           | SoEasY     | 100    |
 | [Restricted](Pwn/Restricted)                                     | Pwn           | xanhacks   | 125    |
-| [Call Me Maybe](Pwn/CallMeMaybe)                                 | Pwn           | SoEasY     | 200    |
+| [Call Me Maybe](Pwn/Call%20me%20maybe)                           | Pwn           | SoEasY     | 200    |
 | [Fonce dans le tas](Pwn/FonceDansLeTas)                          | Pwn           | SoEasY     | 400    |
 | [Fonce pas dans le tas](Pwn/FoncePasDansLeTas)                   | Pwn           | SoEasY     | 600    |
 | [La quête du COVID 4/4](Reverse/LaQueteDuCovid4)                 | Reverse       | Worty      | 100    |
