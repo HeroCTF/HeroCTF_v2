@@ -22,7 +22,7 @@ xanhacks
 
 Voici deux scripts python qui permettent de compter les pixels non noir (R!=0, G!=0, B!=0).
 
-```
+```python
 from PIL import Image
 
 img = Image.open("image.png")
@@ -39,7 +39,7 @@ print(somme)
 
 Ou, la version plus compacte :
 
-```
+```python
 from PIL import Image
 
 pixels = Image.open("image.png").getdata()
