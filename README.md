@@ -34,8 +34,8 @@ Discord : https://discord.gg/PhNkPrfeJG
 | [La quête du COVID 3/4](Forensics/LaQueteDuCovid3)               | Forensics     | Worty      | 200    |
 | [Rules](OSINT/Rules)                                             | OSINT         | xanhacks   | 1      |
 | [Writeups](OSINT/Writeups)                                       | OSINT         | SoEasY     | 15     |
-| [Someone's birthday](OSINT/Someonesbirthday)                     | OSINT         | Worty      | 50     |
-| [Racine-moi](OSINT/Racinemoi)                                    | OSINT         | SoEasY     | 175    |
+| [Someone's birthday](OSINT/Someone's%20birthday)                 | OSINT         | Worty      | 50     |
+| [Racine-moi](OSINT/Racine-moi)                                   | OSINT         | SoEasY     | 175    |
 | [FunnyCat](Pwn/FunnyCat)                                         | Pwn           | xanhacks   | 75     |
 | [Forceur](Pwn/Forceur)                                           | Pwn           | SoEasY     | 100    |
 | [Restricted](Pwn/Restricted)                                     | Pwn           | xanhacks   | 125    |
