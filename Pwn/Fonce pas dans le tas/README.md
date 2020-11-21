@@ -16,6 +16,10 @@ Format : Hero{flag}
 ### Auteur
 SoEasY & Worty
 
+### Fichiers
+Binaire executé par le service : BOO_4
+libc : libc-2.27.so
+
 ### Solution
 // TODO
 
