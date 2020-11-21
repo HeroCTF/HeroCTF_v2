@@ -16,8 +16,7 @@ Pour ce challenge on se transforme en espion et on va chercher de quel admin ce 
 Après quelques recherches ont peut par exemple tomber sur le [twitter de Worty](https://twitter.com/WortySTO) où l'on voit la mention `Naissance le 13 novembre`.
 
 On peut alors avoir l'idée d'explorer son [site internet](https://wortysto.github.io/) où un message nous est clairement destiné : 
-``
-Hero{1ts_w0rty_birthd4y_!!}`bash
+```bash
 Welcome to my website!
 I have one question, Are you comfortable with a linux terminal?
 Enter yes or no, please.
