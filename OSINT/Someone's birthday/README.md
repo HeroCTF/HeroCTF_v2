@@ -36,7 +36,7 @@ A flag is hidden in the site, find it !
 guest@wortyClient:~$ 
 ```
 On se retrouve ici avec ce qui ressemble à un terminal ! on peut donc récupérer le flag de la manière suivante :
-``bash
+```bash
 guest@wortyClient:~$ ls
 -rw-r--r-- About.txt
 -rw-r--r-- Root_Me.txt
