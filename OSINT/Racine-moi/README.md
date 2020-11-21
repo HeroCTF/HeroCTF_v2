@@ -30,5 +30,7 @@ On sort alors notre machine à voyager dans le temps : [Internet archive - WayBa
 Si on rentre alors l'adresse du profile root-me de SoEasY on se rend compte que 2 captures ont été effectuées en octobre : le 13 et le 15 octobre.
 Rien sur celle de 13, mais quand on regarde la capture du 15 Octobre on remarque un flag dans la biographie !
 
+![screenchot](WayBack_SoEasY.png)
+
 ### Flag
 HeroCTF{W4Yb4cK_Tr4v3l ?}
