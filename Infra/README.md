@@ -13,4 +13,4 @@ Discord : https://discord.gg/PhNkPrfeJG
 Ici, vous pourrez retrouver les configurations des dockers et le code source des différents challenges.
 
 
-Les solutions des challenges sont disponibles [ici](https://github.com/HeroCTF/HeroCTF_v2/Challenges).
+Les solutions des challenges sont disponibles [ici](https://github.com/HeroCTF/HeroCTF_v2/tree/master/Challenges).
