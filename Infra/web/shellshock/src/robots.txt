@@ -1,0 +1,3 @@
+User-Agent:*
+
+Disallow: /th1s1ss3cr3t.txt

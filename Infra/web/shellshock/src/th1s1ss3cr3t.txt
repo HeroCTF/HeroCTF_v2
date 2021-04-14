@@ -1,0 +1,1 @@
+Hi Worty, I've put a test file for cgi-bin : wazuuup, check it out!

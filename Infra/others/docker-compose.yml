@@ -1,0 +1,57 @@
+---
+version: "3.7"
+
+services:
+  forensics:
+    image: php:7.2-apache
+    restart: always
+    hostname: forensics
+    ports:
+      - "10000:80"
+    volumes:
+      - "$PWD/forensics/files:/var/www/html"
+
+  funnycat:
+    build: funnycat/
+    restart: always
+    hostname: funnycat
+    ports:
+      - "22222:22"
+
+  restricted:
+    build: restricted/
+    restart: always
+    hostname: pwn
+    ports:
+      - "22444:22"
+
+  postman:
+    build: postman/
+    restart: always
+    hostname: postman
+    ports:
+      - "22555:22"
+
+  firstoverflow:
+    build: firstoverflow/
+    restart: always
+    ports:
+      - "7000:7000"
+
+  callmemaybe:
+    build: callmemaybe/
+    restart: always
+    ports:
+      - "7001:7001"
+
+  foncetas:
+     build: foncetas/
+     restart: always
+     ports:
+       - "7002:7002"
+
+  rop:
+    build: rop/
+    restart: always
+    ports:
+      - "7003:7003"

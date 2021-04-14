@@ -1,0 +1,82 @@
+---
+version: "3.7"
+
+services:
+  php_preg_match:
+    build: php_preg_match/
+    restart: always
+    ports:
+      - "8080:80"
+
+  pasmalin:
+    build: pasmalin/
+    restart: always
+    ports:
+      - "8888:80"
+  
+  sessions-workout:
+    build: sessions-workout/
+    restart: always
+    ports:
+      - "3005:80"
+  
+  xss1:
+    build: xss1/
+    restart: always
+    ports:
+      - "3010:80"
+
+  xss2:
+    build: xss2/
+    restart: always
+    ports:
+      - "3011:80"
+
+  mongodb:
+    image: mongo:latest
+    restart: always
+    command: mongod
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=db
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=p4ssw0rd
+    volumes:
+      - "$PWD/mongo-entrypoint/:/docker-entrypoint-initdb.d/"
+  
+  nodeapp:
+    build: nodeapp/
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb
+
+  freeaccess:
+    build: FreeAccess/
+    restart: always
+    ports:
+      - "5433:80"
+ 
+  sqli:
+    build: sqli/
+    restart: always
+    ports:
+      - "3020:80"
+    depends_on:
+      - mysqli
+
+  mysqli:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    expose:
+      - 3306
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_USER=${SQLI_USER}
+      - MYSQL_PASSWORD=${SQLI_PASSWORD}
+      - MYSQL_DATABASE=${SQLI_DATABASE}
+    volumes:
+      - "$PWD/mysqli/:/docker-entrypoint-initdb.d/"

@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+  form#form.form-signin(method='POST' action='')
+    img(src='images/icon_300.png' alt='HeroCTF Icon' width='256' height='256')
+
+    pre
+      div#message.alert.alert-success(role='alert' style='display: none;')
+    
+    h1.h3.mb-3.font-weight-normal Please sign in
+
+    label.sr-only(for='inputUsername') Username
+    input#inputUsername.form-control(type='text' placeholder='Username' name='username')
+
+    label.sr-only(for='inputPassword') Password
+    input#inputPassword.form-control(type='password' placeholder='Password' name='password')
+
+    button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign in
+
+    p.mt-5.mb-3.text-muted © EcoSecure - 2020
+
+  script(src="javascripts/sendJSON.js")

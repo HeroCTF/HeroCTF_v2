@@ -1,0 +1,15 @@
+<html>
+   <head>
+	<title>Homework checker</title>
+	<meta charset='utf8'></meta>
+   <body>
+      {% if filename %}
+	<p>Your file {{ filename }} will be review soon, thanks!</p>
+      {% endif %}
+      <form action = "http://challs.heroctf.fr:4000/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>   
+   </body>
+</html>
