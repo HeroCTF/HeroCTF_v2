@@ -8,9 +8,11 @@ Les Write Ups sont en cours de réalisations !
 
 La version 2 d'HeroCTF a réuni un total de 176 participants !
 
-Site Web : https://www.heroctf.fr/ <br>
-Twitter : https://twitter.com/HeroCTF <br>
-Discord : https://discord.gg/PhNkPrfeJG
+Website : https://www.heroctf.fr/<br>
+Twitter : https://twitter.com/HeroCTF<br>
+Discord : https://discord.gg/mgk9bv7<br>
+Ctftime : https://ctftime.org/event/1284<br>
+Github  : https://github.com/HeroCTF
 
 # Challenges
 
