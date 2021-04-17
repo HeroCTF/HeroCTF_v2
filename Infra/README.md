@@ -4,9 +4,11 @@
 
 HeroCTF est un CTF (Capture The Flag) qui a pour but de faire découvrir le monde de la cybersécurité à des étudiants de niveau BTS/DUT (voire même lycée/collège).
 
-Site Web : https://www.heroctf.fr/ <br>
-Twitter : https://twitter.com/HeroCTF <br>
-Discord : https://discord.gg/PhNkPrfeJG
+Website : https://www.heroctf.fr/<br>
+Twitter : https://twitter.com/HeroCTF<br>
+Discord : https://discord.gg/mgk9bv7<br>
+Ctftime : https://ctftime.org/event/1284<br>
+Github  : https://github.com/HeroCTF
 
 # Infrastructure
 
